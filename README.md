@@ -1,8 +1,8 @@
 ##Blog Archiver:
 
 > blog archiver - generates an archive page for you blog
-> Copyright (c) 2016, Brian Lin. (MIT Licensed)
 > https://github.com/blin17/blog_archiver
+> Copyright (c) 2016, Brian Lin. (MIT Licensed)
 
 [![npm version](https://badge.fury.io/js/blog-archiver.svg)](https://badge.fury.io/js/blog-archiver)
  
