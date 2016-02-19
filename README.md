@@ -4,6 +4,9 @@
 
 [![npm version](https://badge.fury.io/js/blog-archiver.svg)](https://badge.fury.io/js/blog-archiver)
 
+File Format:
+yyyy-mm-dd-title.md
+
 Inputs:
 - title: Archive Title
 - directory: Directory for files
