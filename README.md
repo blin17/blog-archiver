@@ -1,11 +1,11 @@
-##Blog Archiver:
+##blog-archiver:
 
-> blog archiver - generates an archive page for you blog
+> archive page generator for your blog 
 > https://github.com/blin17/blog_archiver
 > Copyright (c) 2016, Brian Lin. (MIT Licensed)
 
 [![npm version](https://badge.fury.io/js/blog-archiver.svg)](https://badge.fury.io/js/blog-archiver)
- 
+
 Inputs:
 - title: Archive Title
 - directory: Directory for files
