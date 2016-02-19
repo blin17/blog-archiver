@@ -9,14 +9,16 @@ Inputs:
 - directory: Directory for files
 
 Options:
+- routing: put your custom route for the href
 - extension: File Extension for files in directory. Defaults to .md
 - capitalize: Capitalize words in Titles or Leaves as is. Defaults to capitalize.
 
 To use with Express / Connect, use as below.
 
 ```
-var blogarchiver = require('BlogArchiver');
-blogarchiver.generateHTML("blog",__dirname+ "/blog");
+var archiver = require('BlogArchiver');
+var html = archiver.generateHTML("blog", __dirname + "/node_modules/blog-archiver/blog");
+console.log(html);
 ```
 
 **Examples:**  
