@@ -20,5 +20,4 @@ To use with Express / Connect, use as below.
 ```
 var blogarchiver = require('BlogArchiver');
 blogarchiver.generateHTML("blog",__dirname+ "/blog");
-
 ```
