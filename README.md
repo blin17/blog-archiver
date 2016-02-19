@@ -2,8 +2,9 @@
 
 	blog archiver - generates an archive page for you blog
 	Copyright (c) 2016, Brian Lin. (MIT Licensed)
-	[https://www.npmjs.com/package/blog-archiver](https://www.npmjs.com/package/blog-archiver)
-	[https://github.com/blin17/blog_archiver](https://github.com/blin17/blog_archiver)
+	https://github.com/blin17/blog_archiver
+
+[![NPM version](https://badge.fury.io/js/marked.png)][badge]
  
 Inputs:
 - title: Archive Title
