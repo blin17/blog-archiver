@@ -1,8 +1,6 @@
 ##blog-archiver:
 
 > archive page generator for your blog 
-> https://github.com/blin17/blog_archiver
-> Copyright (c) 2016, Brian Lin. (MIT Licensed)
 
 [![npm version](https://badge.fury.io/js/blog-archiver.svg)](https://badge.fury.io/js/blog-archiver)
 
@@ -21,6 +19,8 @@ var blogarchiver = require('BlogArchiver');
 blogarchiver.generateHTML("blog",__dirname+ "/blog");
 ```
 
-**Examples:**
-
+**Examples:**  
 See it work for my own blog [here](brianlin.net/blog)
+
+
+> Copyright (c) 2016, Brian Lin. (MIT Licensed)
