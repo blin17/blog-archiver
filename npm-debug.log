@@ -1,0 +1,96 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.6.0
+3 info using node@v0.10.26
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/brianlin/Documents/Coding_Projects/web_workspace/blog-archiver',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/brianlin/.npm/blog-archiver/1.0.2/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/brianlin/.npm correctMkdir not in flight; initializing
+10 info lifecycle blog-archiver@1.0.2~prepublish: blog-archiver@1.0.2
+11 silly lifecycle blog-archiver@1.0.2~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/brianlin/.npm/blog-archiver/1.0.2/package.tgz',
+12 verbose tar pack   '/Users/brianlin/Documents/Coding_Projects/web_workspace/blog-archiver' ]
+13 verbose tarball /Users/brianlin/.npm/blog-archiver/1.0.2/package.tgz
+14 verbose folder /Users/brianlin/Documents/Coding_Projects/web_workspace/blog-archiver
+15 verbose addLocalTarball adding from inside cache /Users/brianlin/.npm/blog-archiver/1.0.2/package.tgz
+16 verbose correctMkdir /Users/brianlin/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd blog-archiver@1.0.2
+18 verbose afterAdd /Users/brianlin/.npm/blog-archiver/1.0.2/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/brianlin/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/brianlin/.npm/blog-archiver/1.0.2/package/package.json written
+21 silly publish { name: 'blog-archiver',
+21 silly publish   version: '1.0.2',
+21 silly publish   description: 'Generates an archive page for a blog given a folder with blog entries',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/blin17/blog_archiver.git' },
+21 silly publish   keywords: [ 'nodejs', 'blog' ],
+21 silly publish   author: { name: 'Brian Lin' },
+21 silly publish   license: 'MIT',
+21 silly publish   bugs: { url: 'https://github.com/blin17/blog_archiver/issues' },
+21 silly publish   homepage: 'https://github.com/blin17/blog_archiver',
+21 silly publish   readme: '##blog-archiver:\n\n> archive page generator for your blog \n\n[![npm version](https://badge.fury.io/js/blog-archiver.svg)](https://badge.fury.io/js/blog-archiver)\n\nFile Format:\nyyyy-mm-dd-title.md\n\nInputs:\n- title: Archive Title\n- directory: Directory for files\n\nOptions:\n- routing: put your custom route for the href\n- extension: File Extension for files in directory. Defaults to .md\n- capitalize: Capitalize words in Titles or Leaves as is. Defaults to capitalize.\n\nTo use with Express / Connect, use as below.\n\n```\nvar archiver = require(\'BlogArchiver\');\nvar html = archiver.generateHTML("blog", __dirname + "/node_modules/blog-archiver/blog");\nconsole.log(html);\n```\n\n**Examples:**  \nSee it work for my own blog [here](brianlin.net/blog)\n\n\n> Copyright (c) 2016, Brian Lin. (MIT Licensed)',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'ae21ae8fc90566690b3914c659fbd5f435c68baf',
+21 silly publish   _id: 'blog-archiver@1.0.2',
+21 silly publish   _shasum: 'b9f46d985237dee050cd175473f4e88031ce8e0a',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name blog-archiver
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry uri https://registry.npmjs.org/blog-archiver
+27 verbose publish registryBase https://registry.npmjs.org/
+28 silly publish uploading /Users/brianlin/.npm/blog-archiver/1.0.2/package.tgz
+29 verbose request uri https://registry.npmjs.org/blog-archiver
+30 verbose request sending authorization for write operation
+31 info attempt registry request try #1 at 19:15:42
+32 verbose request using bearer token for auth
+33 verbose request id 66dc4335d14e4ad5
+34 http request PUT https://registry.npmjs.org/blog-archiver
+35 http 403 https://registry.npmjs.org/blog-archiver
+36 verbose headers { 'content-type': 'application/json',
+36 verbose headers   'cache-control': 'max-age=300',
+36 verbose headers   'content-length': '95',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Sat, 20 Feb 2016 00:15:43 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-atl6238-ATL',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1455927342.738056,VS0,VE720' }
+37 verbose request invalidating /Users/brianlin/.npm/registry.npmjs.org/blog-archiver on PUT
+38 error publish Failed PUT 403
+39 verbose stack Error: "You cannot publish over the previously published version 1.0.2." : blog-archiver
+39 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+39 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+39 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+39 verbose stack     at Request.EventEmitter.emit (events.js:98:17)
+39 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1035:10)
+39 verbose stack     at Request.EventEmitter.emit (events.js:117:20)
+39 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:962:12)
+39 verbose stack     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+39 verbose stack     at _stream_readable.js:920:16
+40 verbose statusCode 403
+41 verbose pkgid blog-archiver
+42 verbose cwd /Users/brianlin/Documents/Coding_Projects/web_workspace/blog-archiver
+43 error Darwin 14.5.0
+44 error argv "node" "/usr/local/bin/npm" "publish"
+45 error node v0.10.26
+46 error npm  v3.6.0
+47 error code E403
+48 error "You cannot publish over the previously published version 1.0.2." : blog-archiver
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]

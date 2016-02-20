@@ -25,7 +25,7 @@ console.log(html);
 ```
 
 **Examples:**  
-See it work for my own blog [here](brianlin.net/blog)
+See it work for my own blog [here](http://brianlin.net/blog)
 
 
 > Copyright (c) 2016, Brian Lin. (MIT Licensed)
