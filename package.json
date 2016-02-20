@@ -1,10 +1,10 @@
 {
   "name": "blog-archiver",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generates an archive page for a blog given a folder with blog entries",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "index.js"
   },
   "repository": {
     "type": "git",
