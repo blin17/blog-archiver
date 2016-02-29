@@ -1,6 +1,6 @@
 {
   "name": "blog-archiver",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Generates an archive page for a blog given a folder with blog entries",
   "main": "index.js",
   "scripts": {

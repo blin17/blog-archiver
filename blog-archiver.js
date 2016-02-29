@@ -30,7 +30,8 @@ BlogArchiver.generateHTML = function(title, directory, options){
 	options = options || {};
 	var routing = options.routing || "/blog";
 	var extension = options.extension || "md";
-	var capitalize = options.capitalize || true;
+	var capitalize = (options.capitalize === false)? false: true;
+	var long = (options.long === false)? false: true;
 	var files = fs.readdirSync(directory);
 	files.sort(function(a, b) {
 		a_split = a.split("-");
@@ -40,8 +41,11 @@ BlogArchiver.generateHTML = function(title, directory, options){
 				+ (b_split[2] - a_split[2]);
 		return date_diff;
 	});
-	var html_string = ("<h3>" + title + "</h3>\n");
-	html_string += ("<ul class = \"posts\">\n");
+	var html_string = "";
+	if (long){
+		html_string = ("<h3>" + title + "</h3>\n");
+		html_string += ("<ul class = \"posts\">\n");
+	}
 	for (var i = 0; i < files.length; i ++){
 		fn_split = files[i].split("-");
 		var ext = fn_split[fn_split.length-1].split(".")[1];
@@ -73,7 +77,9 @@ BlogArchiver.generateHTML = function(title, directory, options){
 			}
 		}
 	}
-	html_string += "</ul>";
+	if (long){
+		html_string += "</ul>";
+	}
 	return html_string;
 	
 };
